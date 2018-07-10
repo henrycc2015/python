@@ -1,0 +1,57 @@
+@import 'variables.scss';
+// 常用类名
+// Typography文字
+
+// 导航栏标题，重要分类名称
+.font-h1 {
+    font-size: $f1;
+    color: $c-black;
+}
+// 功能按钮，分类标题
+.font-h2 {
+    font-size: $f2;
+    color: $c-black;
+}
+// 模块内容标题
+.font-h3 {
+    font-size: $f3;
+    color: $c-black;
+}
+// 正文，input输入框
+.font-n3 {
+    font-size: $f4;
+    color: $c-black;
+}
+// 次要正文，cell的左侧提示内容
+.font-n6 {
+    font-size: $f4;
+    color: $c-grey;
+}
+// 三级正文，cell的左侧提示内容
+.font-n9 {
+    font-size: $f4;
+    color: $c-light;
+}
+// 四级正文，placeholder或提示内容
+.font-nc1 {
+    font-size: $f4;
+    color: $c-lightgrey;
+}
+// 说明文字
+.font-s6 {
+    font-size: $f6;
+    color: $c-grey;
+}
+// 部分功能注释文字
+.font-s9 {
+    font-size: $f6;
+    color: $c-light;
+}
+
+// 可点击文字
+.font-tap {
+    color: $c-high;
+}
+
+
+

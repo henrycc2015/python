@@ -1,0 +1,40 @@
+
+.vt-mask-enter,
+.vt-mask-leave-active {
+  opacity: 0;
+}
+.vt-mask-leave-active,
+.vt-mask-enter-active {
+  transition: opacity 300ms;
+}
+
+.vt-dialog-enter-active {
+  animation-name: bounce-in;
+  animation-duration: .2s;
+  transform: translate3d(-50%, -50%, 0) scale(0.5)!important;
+  opacity: 0;
+}
+.vt-dialog-leave-active {
+  animation-name: bounce-out;
+  animation-duration: 0.2s;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: translate3d(-50%, -50%, 0) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes bounce-out {
+  0% {
+    transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) scale(0.4);
+    opacity: 0;
+  }
+}

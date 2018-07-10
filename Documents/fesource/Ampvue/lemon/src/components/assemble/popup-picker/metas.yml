@@ -1,0 +1,61 @@
+props:
+  disable:
+    type: Boolean
+    en: picker disable
+    zh-CN: 是否启用popup-picker
+  value:
+    type: Array
+    en: picker value, use `v-model` for binding
+    zh-CN: '表单值，使用`v-model绑定`'
+  title:
+    en: label text
+    zh-CN: 标题
+  cancel-text:
+    en: popup cancel text
+    zh-CN: 弹窗的取消文字
+  confirm-text:
+    en: popup confirm text
+    zh-CN: 弹窗的确认文字
+  placeholder:
+    en: placeholder
+    zh-CN: 提示文字
+  show-name:
+    type: Boolean
+    default: false
+    en: if show names instead of keys
+    zh-CN: 是否显示文字值而不是key
+  show:
+    type: Boolean
+    en: popup show (supports the .sync modifier next)
+    zh-CN: 显示 (支持.sync修饰 next)
+  display-format:
+    type: Function
+    en: 'used to format display text on cell, param: (currentValue)'
+    zh-CN: 自定义在cell上的显示格式，参数为当前 value，使用该属性时，show-name 属性将失效
+  popup-style:
+    type: Object
+    en: popup style
+    zh-CN: 弹窗样式，可以用于强制指定 z-index
+  popup-title:
+    type: String
+    en: popup title
+    zh-CN: 弹窗标题
+  left-short-line:
+    type: Boolean
+    zh-CN: 左边是否是短线
+events:
+  on-change:
+    params: '`(value, Array names)`'
+    en: emits when value is changed
+    zh-CN: 值变化时触发
+  on-show:
+    en: emits when popup shows
+    zh-CN: 弹窗出现时触发
+  on-hide:
+    params: '`(closeType)` true表示confirm(选择确认), false表示其他情况的关闭'
+    en: emits when popup is closed
+    zh-CN: 弹窗关闭时触发
+  on-shadow-change:
+    params: '`(Array ids, Array names)`'
+    en: emits when picker value is changed
+    zh-CN: picker 值变化时触发，即滑动 picker 时触发

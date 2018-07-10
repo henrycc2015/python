@@ -1,0 +1,575 @@
+.tetris {
+	font-family: 'tetris' !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.i-flag:before {
+	content: "\e612";
+}
+
+.i-cross:before {
+	content: "\e60e";
+}
+
+.i-gear:before {
+	content: "\e620";
+}
+
+.i-ellipses:before {
+	content: "\e60d";
+}
+
+.i-plane:before {
+	content: "\e610";
+}
+
+.i-angle-left:before {
+	content: "\e614";
+}
+
+.i-calendar:before {
+	content: "\e600";
+}
+
+.i-share:before {
+	content: "\e606";
+}
+
+.i-check:before {
+	content: "\e607";
+}
+
+.i-lightning:before {
+	content: "\e608";
+}
+
+.i-arrow-up:before {
+	content: "\e609";
+}
+
+.i-plus:before {
+	content: "\e617";
+}
+
+.i-minus:before {
+	content: "\e618";
+}
+
+.i-clock:before {
+	content: "\e601";
+}
+
+.i-check-hand-written:before {
+	content: "\e611";
+}
+
+.i-indicator:before {
+	content: "\e613";
+}
+
+.i-bell-solid:before {
+	content: "\e60b";
+}
+
+.i-check-solid:before {
+	content: "\e60a";
+}
+
+.i-check-bold:before {
+	content: "\e602";
+}
+
+.i-bell:before {
+	content: "\e603";
+}
+
+.i-lightning-solid:before {
+	content: "\e604";
+}
+
+.i-i-hollow:before {
+	content: "\e605";
+}
+
+.i-hourglass-solid:before {
+	content: "\e60c";
+}
+
+.i-wechat:before {
+	content: "\e660";
+}
+
+.i-eye:before {
+	content: "\e689";
+}
+
+.i-cash-hollow:before {
+	content: "\e61b";
+}
+
+.i-check-hollow:before {
+	content: "\e61c";
+}
+
+.i-start-hollow:before {
+	content: "\e61d";
+}
+
+.i-flag-hollow:before {
+	content: "\e61e";
+}
+
+.i-angle-left-light:before {
+	content: "\e615";
+}
+
+.i-cross-light:before {
+	content: "\e616";
+}
+
+.i-angle-right-bold:before {
+	content: "\e61a";
+}
+
+.i-magnifier:before {
+	content: "\e619";
+}
+
+.i-custom-service:before {
+	content: "\e889";
+}
+
+.i-eye-closed:before {
+	content: "\e630";
+}
+
+.i-bean:before {
+	content: "\e61f";
+}
+
+.i-plus-light:before {
+	content: "\e621";
+}
+
+.i-minus-light:before {
+	content: "\e622";
+}
+
+.i-number-zero:before {
+	content: "\e623";
+}
+
+.i-number-one:before {
+	content: "\e624";
+}
+
+.i-number-two:before {
+	content: "\e625";
+}
+
+.i-number-three:before {
+	content: "\e626";
+}
+
+.i-number-five:before {
+	content: "\e627";
+}
+
+.i-number-six:before {
+	content: "\e628";
+}
+
+.i-number-seven:before {
+	content: "\e629";
+}
+
+.i-number-nine:before {
+	content: "\e62b";
+}
+
+.i-percent:before {
+	content: "\e62c";
+}
+
+.i-point:before {
+	content: "\e62d";
+}
+
+.i-number-four:before {
+	content: "\e62f";
+}
+
+.i-number-eight:before {
+	content: "\e62a";
+}
+
+.i-service-hall:before {
+	content: "\e63b";
+}
+
+.i-yinzhangshenpitongguo:before {
+	content: "\e6a4";
+}
+
+.i-bankcard:before {
+	content: "\e68a";
+}
+
+.i-wallet:before {
+	content: "\e66a";
+}
+
+.i-question-round:before {
+	content: "\e714";
+}
+
+.i-warning:before {
+	content: "\e652";
+}
+
+.i-hammer:before {
+	content: "\e653";
+}
+
+.i-angle-down:before {
+	content: "\e654";
+}
+
+.i-angle-up:before {
+	content: "\e656";
+}
+
+.i-quote:before {
+	content: "\e657";
+}
+
+.i-round-cross:before {
+	content: "\e65a";
+}
+
+.i-eye-close:before {
+	content: "\e62e";
+}
+
+.i-radio:before {
+	content: "\e638";
+}
+
+.i-checkbox-no:before {
+	content: "\e60f";
+}
+
+.i-radio-checked:before {
+	content: "\e65c";
+}
+
+.i-checkbox-solid:before {
+	content: "\e65d";
+}
+
+.i-linkman:before {
+	content: "\e6f5";
+}
+
+.i-scan-card:before {
+	content: "\e631";
+}
+
+.i-plus-thin:before {
+	content: "\e65e";
+}
+
+.i-download:before {
+	content: "\e66b";
+}
+
+.i-calculator:before {
+	content: "\e635";
+}
+
+.i-line-up-arrow:before {
+	content: "\e636";
+}
+
+.i-circle-up-arrow:before {
+	content: "\e637";
+}
+
+.i-circle-down-arrow-copy:before {
+	content: "\e715";
+}
+
+.i-plus-copy:before {
+	content: "\e716";
+}
+
+.i-thumbsUp:before {
+	content: "\e632";
+}
+
+.i-hot:before {
+	content: "\e633";
+}
+
+.i-thumbsUp1:before {
+	content: "\e634";
+}
+
+.i-favorite:before {
+	content: "\e639";
+}
+
+.i-favorite1:before {
+	content: "\e63a";
+}
+
+.i-order:before {
+	content: "\e661";
+}
+
+.i-gift:before {
+	content: "\e662";
+}
+
+.i-circle-question:before {
+	content: "\e63c";
+}
+
+.i-scan:before {
+	content: "\e63d";
+}
+
+.i-annual-progress:before {
+	content: "\e63f";
+}
+
+.i-umbrella:before {
+	content: "\e640";
+}
+
+.i-user-information:before {
+	content: "\e641";
+}
+
+.i-search-policy:before {
+	content: "\e642";
+}
+
+.i-self-card:before {
+	content: "\e643";
+}
+
+.i-annual-proportion:before {
+	content: "\e644";
+}
+
+.i-annual-invest:before {
+	content: "\e645";
+}
+
+.i-computer-plus:before {
+	content: "\e646";
+}
+
+.i-guarantee-star:before {
+	content: "\e647";
+}
+
+.i-shield-check:before {
+	content: "\e648";
+}
+
+.i-e-receipt:before {
+	content: "\e649";
+}
+
+.i-annuity-quit:before {
+	content: "\e64a";
+}
+
+.i-annuity-receive:before {
+	content: "\e64b";
+}
+
+.i-card-activation:before {
+	content: "\e64c";
+}
+
+.i-calculate-tax:before {
+	content: "\e64d";
+}
+
+.i-second-diagnosis:before {
+	content: "\e64e";
+}
+
+.i-report-apply:before {
+	content: "\e64f";
+}
+
+.i-phone-card:before {
+	content: "\e650";
+}
+
+.i-retreat:before {
+	content: "\e651";
+}
+
+.i-electronic-policy:before {
+	content: "\e655";
+}
+
+.i-change-bank:before {
+	content: "\e658";
+}
+
+.i-transform:before {
+	content: "\e659";
+}
+
+.i-serious-illness:before {
+	content: "\e65b";
+}
+
+.i-people-heart:before {
+	content: "\e65f";
+}
+
+.i-online-hospital:before {
+	content: "\e663";
+}
+
+.i-telephone-inquiry:before {
+	content: "\e664";
+}
+
+.i-health-card:before {
+	content: "\e665";
+}
+
+.i-manual:before {
+	content: "\e666";
+}
+
+.i-payment-claims:before {
+	content: "\e667";
+}
+
+.i-quick-inquiry:before {
+	content: "\e668";
+}
+
+.i-inquiry:before {
+	content: "\e669";
+}
+
+.i-health-evaluation:before {
+	content: "\e66e";
+}
+
+.i-receive-money:before {
+	content: "\e66f";
+}
+
+.i-pension:before {
+	content: "\e670";
+}
+
+.i-health360:before {
+	content: "\e671";
+}
+
+.i-registration:before {
+	content: "\e672";
+}
+
+.i-invoice:before {
+	content: "\e673";
+}
+
+.i-hospital:before {
+	content: "\e674";
+}
+
+.i-id-change:before {
+	content: "\e675";
+}
+
+.i-unbind:before {
+	content: "\e66c";
+}
+
+.i-company:before {
+	content: "\e66d";
+}
+
+.i-delete:before {
+	content: "\e63e";
+}
+
+.i-children:before {
+	content: "\e676";
+}
+
+.i-unscramble:before {
+	content: "\e677";
+}
+
+.i-little-money:before {
+	content: "\e678";
+}
+
+.i-check-report:before {
+	content: "\e679";
+}
+
+.i-change-record:before {
+	content: '\e67a';
+}
+
+.i-more:before {
+	content: '\e67b';
+}
+
+.i-round-plus:before {
+	content: '\e67d';
+}
+
+.i-round-minus:before {
+	content: '\e67c';
+}
+
+.i-round-logo:before {
+	content: '\e681';
+}
+
+.i-logo:before {
+	content: '\e680';
+}
+
+.i-round-yzt-logo:before {
+	content: '\e67f';
+}
+
+.i-service-image:before {
+	content: '\e67e';
+}
+
+.i-custom-service-new:before {
+	content: '\e682';
+}
+
+.i-check-solid-full:before {
+	content: '\e684';
+}
+
+.i-lightning-solid-full:before {
+	content: '\e685';
+}
+
+.i-bell-solid-full:before {
+	content: '\e683';
+}

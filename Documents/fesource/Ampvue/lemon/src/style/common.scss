@@ -1,0 +1,158 @@
+body, div, span, header, footer, nav, section, aside, article, main, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, i, b, textarea, button, input, select  {
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: PingFangSC-Regular,-apple-system-font,Helvetica Neue,sans-serif;
+    font-weight: normal;
+    -webkit-tap-highlight-color:transparent;
+    &:focus {
+        outline: none;
+    }
+    -webkit-appearance: none; 
+}
+
+body, div, span, header, footer, nav, section, aside, article, main, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, i, b, img {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+img {
+    pointer-events: none;
+}
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #c1c1c1;
+}
+$iconfont-url: '//at.alicdn.com/t/font_239453_ddt3h0kipeu';
+@font-face {
+  font-family: 'tetris';
+  src: url('#{$iconfont-url}.eot');
+  src: url('#{$iconfont-url}.eot?#iefix') format('embedded-opentype'),
+  url('#{$iconfont-url}.woff') format('woff'),
+  url('#{$iconfont-url}.ttf') format('truetype'),
+  url('#{$iconfont-url}.svg#lego') format('svg');
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: PingFangSC-Regular,-apple-system-font,Helvetica Neue,sans-serif;
+}
+
+html, body, .app{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #efefef;
+}
+body {
+    user-select:none;
+}
+html{
+    background-color: #efefef;
+}
+@import './iconfont.scss';
+@import './1px.scss';
+@import './mixin.scss';
+#app {
+    height: 100%;
+}
+.app {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    z-index: 1;
+}
+// 标准流
+.content {
+    position: relative;
+    padding-bottom: px2rem(120);
+    overflow-y: auto;
+    z-index: 1;
+}
+// 驻顶部
+.sticktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, .9);
+}
+// 驻底部
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: px2rem(120);
+    background: rgba(255, 255, 255, .9);
+}
+
+// 白色背景
+.bgwhite {
+    background-color: #ffffff;
+}
+
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+
+.back_img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float:right;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.fw{
+    font-weight: bold;
+}
+.skeleton-wrapper{
+    position: absolute;
+    z-index: 888;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #efefef;
+}
+.skeletonbg {
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-bottom: 7px;
+}
+

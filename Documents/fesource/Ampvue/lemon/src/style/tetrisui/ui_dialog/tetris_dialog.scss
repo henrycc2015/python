@@ -1,0 +1,38 @@
+.tetris-dialog {
+    position: fixed;
+    z-index: 1000;
+    width: 80%;
+    max-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    background-color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.tetris-dialog_hd {
+    padding: 1rem 1.5rem .4rem;
+}
+
+.tetris-dialog_title {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.tetris-dialog_bd {
+    padding: 0 .5rem .8rem;
+    min-height: 40px;
+    font-size: 15px;
+    line-height: 1.3;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: #333;
+
+}
+
+.tetris-dialog_ft {
+    position: relative;
+}

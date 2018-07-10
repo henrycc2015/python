@@ -1,0 +1,65 @@
+* {
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: PingFangSC-Regular,-apple-system-font,Helvetica Neue,sans-serif;
+    font-weight: normal;
+    -webkit-tap-highlight-color:transparent;
+    padding: 0;
+    margin: 0;
+    &:focus {
+        outline: none;
+    }
+    -webkit-appearance: none;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #c1c1c1;
+}
+$iconfont-url: '//at.alicdn.com/t/font_239453_ddt3h0kipeu';
+@font-face {
+  font-family: 'tetris';
+  src: url('#{$iconfont-url}.eot');
+  src: url('#{$iconfont-url}.eot?#iefix') format('embedded-opentype'),
+  url('#{$iconfont-url}.woff') format('woff'),
+  url('#{$iconfont-url}.ttf') format('truetype'),
+  url('#{$iconfont-url}.svg#lego') format('svg');
+}
+
+html, body, .app{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #efefef;
+}
+body {
+    user-select:none;
+}
+html{
+    background-color: #efefef;
+}
+@import './iconfont.scss';
+@import './1px.scss';
+@import './mixin.scss';
+#app {
+    height: 100%;
+}
+.app {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    z-index: 1;
+}
+// 标准流
+.content {
+    position: relative;
+    padding-bottom: px2rem(120);
+    overflow-y: auto;
+    height: 100%;
+    z-index: 1;
+}
+// 白色背景
+.bgwhite {
+    background-color: #fff;
+}

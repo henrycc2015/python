@@ -1,0 +1,8 @@
+cell-add:
+  rule: 单行cell 文字居中，且有加号这个icon，多运用于添加银行卡
+  props:
+    is-need-top-border:
+      type: Boolean
+      en: top border show
+      zh-CN: 是否启用popup-picker
+  

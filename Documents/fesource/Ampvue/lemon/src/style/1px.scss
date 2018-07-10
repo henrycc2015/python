@@ -1,0 +1,120 @@
+@mixin setTopLine($c: #DCDCDC) {
+	content: ' ';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 1px;
+	border-top: 1px solid $c;
+	color: $c;
+	transform-origin: 0 0;
+	transform: scaleY(0.5);
+}
+
+@mixin setBottomLine($c: #DCDCDC) {
+	content: ' ';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 1px;
+	border-bottom: 1px solid $c;
+	color: $c;
+	transform-origin: 0 100%;
+	transform: scaleY(0.5);
+}
+
+@mixin setLeftLine($c: #DCDCDC) {
+	content: ' ';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1px;
+	bottom: 0;
+	border-left: 1px solid $c;
+	color: $c;
+	transform-origin: 0 0;
+	transform: scaleX(0.5);
+}
+
+@mixin setRightLine($c: #DCDCDC) {
+	content: ' ';
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 1px;
+	bottom: 0;
+	border-right: 1px solid $c;
+	color: $c;
+	transform-origin: 100% 0;
+	transform: scaleX(0.5);
+}
+
+@mixin setLine($c: #DCDCDC) {
+	content: ' ';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200%;
+	height: 1px;
+	border: 1px solid $c;
+	color: $c;
+	height: 200%;
+	box-sizing: border-box;
+	transform-origin: left top;
+	transform: scale(0.5);
+}
+
+.tetris-1px,
+.tetris-1px-t,
+.tetris-1px-b,
+.tetris-1px-tb,
+.tetris-1px-l,
+.tetris-1px-r {
+	position: relative;
+}
+
+.tetris-1px {
+	&:before {
+		@include setLine();
+	}
+}
+
+.tetris-1px-t {
+	&:before {
+		@include setTopLine();
+	}
+}
+
+.tetris-1px-b {
+	&:after {
+		@include setBottomLine();
+	}
+}
+
+.tetris-1px-tb {
+	&:before {
+		@include setTopLine();
+	}
+	&:after {
+		@include setBottomLine();
+	}
+}
+
+.tetris-1px-l {
+	&:before {
+		@include setLeftLine();
+	}
+}
+
+.tetris-1px-r {
+	&:after {
+		@include setRightLine();
+	}
+}
+
+.tetris-1px-b-15 {
+	&:after {
+		left: 15px;
+	}
+}

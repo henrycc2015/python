@@ -1,0 +1,42 @@
+## popup
+
+**demo地址:**  http://localhost:8088/index.html#/demo/popup/popup
+
+##### 应用场景
+> 从屏幕底部弹出内容的动画
+
+##### 用法
+```
+<template>
+    <popup v-model="showValue" >
+        <div class="popup-redefine">
+            popup的内容自定义，例如可用popup-header和其他样式组合，或其他内容
+            <br/>
+            <br/>
+        </div>
+    </popup> 
+    
+</template>
+
+```
+
+##### 属性props
+属性名| 类型| 默认值| 描述
+---|---|---|---
+data | Array | -- | picker展示的数据
+columns | String | -- | 指定联动模式下的列数，当不指定时表示非联动
+fixedColumns | Number | 0 | 指定显示多少列，隐藏多余的
+column-width | Array | -- | 定义每一列宽度，只需要定义除最后一列宽度，最后一列自动宽度， 比如对于3列选择，可以这样：[1/2, 1/5]
+value | Array | -- | 表单值，使用`v-model`绑定
+
+##### 事件methods
+事件名|  描述
+---|---
+on-change | 值变化时触发
+
+##### 使用备注
+> 该组件中使用了子组件flexbox和flexbox-item来渲染出滚轮的效果，所以在使用时，主要就是data的数据格式，必须时数组形式的
+
+
+
+---
